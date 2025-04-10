@@ -66,6 +66,13 @@ public class calculator implements ActionListener {
 
         functionButtons[7] = clrButton;
 
+        panel = new JPanel();
+        panel.setBounds(50, 100, 300, 300);
+        panel.setLayout(new GridLayout(4, 4, 10, 10));
+        panel.setBackground(Color.PINK);
+
+        frame.add(panel);
+
         frame.add(textfield);
         frame.add(delButton);
         frame.add(clrButton);
